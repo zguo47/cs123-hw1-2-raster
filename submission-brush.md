@@ -201,10 +201,16 @@ Paste your output on top of this comment!
 
 
 ## Design Choices
+I create four separate initialize mask methods for each of the four types of brush, because it was easier to debug for me. 
+I also separate the normal brush and smudge brush as two different paint methods. 
+Apart from initializing the masks in settings change, I also initialize them in mouseDown, since they will
+not be initialized if we don't change our settings and directly go painting. 
 
 ## Collaboration/References
+Huge thanks to Tomas and Mehek for having to deal with my ill-designed code...
 
 ## Known Bugs
+N/A
 
 ## Extra Credit
 
