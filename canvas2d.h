@@ -9,8 +9,14 @@
 class Canvas2D : public QLabel {
     Q_OBJECT
 public:
+    bool m_isDown = false;
+
     int m_width = 0;
     int m_height = 0;
+
+    int mask_width = 0;
+    int mask_height = 0;
+
 
     void init();
     void clearCanvas();
@@ -27,6 +33,8 @@ public:
 
 private:
     std::vector<RGBA> m_data;
+    std::vector<float> mask;
+    std::vector<RGBA> smudge_pickup;
 
     void mouseDown(int x, int y);
     void mouseDragged(int x, int y);
@@ -50,6 +58,16 @@ private:
     }
 
     // TODO: add any member variables or functions you need
+    int posToIndex(int x, int y);
+    int maskToCanvas(int x, int y, int canvas_x, int canvas_y, int radius);
+    void initConstantMask(int radius);
+    void initLinearMask(int radius);
+    void initQuadraticMask(int radius);
+    void initSmudgeMask(int x, int y, int radius);
+    bool checkClearSmudge(int x, int y);
+
+    void brush(int x, int y);
+    void brushSmudge(int x, int y);
 };
 
 #endif // CANVAS2D_H
