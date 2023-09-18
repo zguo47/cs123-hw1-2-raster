@@ -22,6 +22,10 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/241d99
 
 #### Your Output
 
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/59f8e7b5-8a43-472d-8f13-0df8c7cc0c94
+
+
 <!---
 Paste your output on top of this comment!
 -->
@@ -36,6 +40,11 @@ Paste your output on top of this comment!
 https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/9706fa04-7710-441f-b292-ab010e04dec6
 
 #### Your Output
+
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/2684ec95-be11-4f0a-9163-d4e5c895da2e
+
+
 
 <!---
 Paste your output on top of this comment!
@@ -52,6 +61,12 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/c5df5c
 
 #### Your Output
 
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/1ecc2613-d9bf-429e-b693-9d9238901e33
+
+
+
+
 <!---
 Paste your output on top of this comment!
 -->
@@ -66,6 +81,10 @@ Paste your output on top of this comment!
 https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/26440b63-2d1c-43fd-95f2-55b74ad3bbed
 
 #### Your Output
+
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/eec912fe-8aad-4a95-8406-c6121e998a60
+
 
 <!---
 Paste your output on top of this comment!
@@ -82,6 +101,10 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/0b49c7
 
 #### Your Output
 
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/6203238f-491d-4d69-bc22-1df1fd8da99d
+
+
 <!---
 Paste your output on top of this comment!
 -->
@@ -96,6 +119,10 @@ Paste your output on top of this comment!
 https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/6f619df6-80cd-4849-8831-6a5aade2a517
 
 #### Your Output
+
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/2559f358-517e-4bd8-b5fd-c63f2dbcf46f
+
 
 <!---
 Paste your output on top of this comment!
@@ -112,6 +139,10 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/fd9578
 
 #### Your Output
 
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/8e0b572b-9d1b-4c9a-a952-22190a8cc765
+
+
 <!---
 Paste your output on top of this comment!
 -->
@@ -126,6 +157,10 @@ Paste your output on top of this comment!
 https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/f5344248-fa5f-4c33-b6df-ff0a45011c7a
 
 #### Your Output
+
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/1a759d5b-f988-40a5-bf60-a3dcd545bd1c
+
 
 <!---
 Paste your output on top of this comment!
@@ -142,6 +177,11 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/b13d31
 
 #### Your Output
 
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/0ac7cc7a-72cf-4d5b-815e-5e7544361be8
+
+
+
 <!---
 Paste your output on top of this comment!
 -->
@@ -157,6 +197,10 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/8e4877
 
 #### Your Output
 
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/fa96b34f-5727-4a1a-b48d-885b489aa5c5
+
+
 <!---
 Paste your output on top of this comment!
 -->
@@ -164,10 +208,16 @@ Paste your output on top of this comment!
 
 
 ## Design Choices
+I create four separate initialize mask methods for each of the four types of brush, because it was easier to debug for me. 
+I also separate the normal brush and smudge brush as two different paint methods. 
+Apart from initializing the masks in settings change, I also initialize them in mouseDown, since they will
+not be initialized if we don't change our settings and directly go painting. 
 
 ## Collaboration/References
+Huge thanks to Tomas and Mehek for having to deal with my ill-designed code...
 
 ## Known Bugs
+N/A
 
 ## Extra Credit
 

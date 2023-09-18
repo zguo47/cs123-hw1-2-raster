@@ -217,7 +217,8 @@ bool Canvas2D::checkClearSmudge(int x, int y){
 void Canvas2D::brush(int x, int y){
     int radius = settings.brushRadius;
     RGBA color = settings.brushColor;
-    float alpha = (float)color.a / 255;
+    float alpha = color.a / 255.0;
+
 
     for (int i = 0; i < mask_width; i++){
         for (int j = 0; j < mask_height; j++){
@@ -227,9 +228,9 @@ void Canvas2D::brush(int x, int y){
                 continue;
             }else{
                 float opacity = mask[j *mask_width + i];
-                m_data[posToIndex(canvas_x, canvas_y)].r = alpha * opacity * color.r + (1 - alpha * opacity) * m_data[posToIndex(canvas_x, canvas_y)].r;
-                m_data[posToIndex(canvas_x, canvas_y)].g = alpha * opacity * color.g + (1 - alpha * opacity) * m_data[posToIndex(canvas_x, canvas_y)].g;
-                m_data[posToIndex(canvas_x, canvas_y)].b = alpha * opacity * color.b + (1 - alpha * opacity) * m_data[posToIndex(canvas_x, canvas_y)].b;
+                m_data[posToIndex(canvas_x, canvas_y)].r = (alpha * opacity) * color.r + (1 - alpha * opacity) * m_data[posToIndex(canvas_x, canvas_y)].r;
+                m_data[posToIndex(canvas_x, canvas_y)].g = (alpha * opacity) * color.g + (1 - alpha * opacity) * m_data[posToIndex(canvas_x, canvas_y)].g;
+                m_data[posToIndex(canvas_x, canvas_y)].b = (alpha * opacity) * color.b + (1 - alpha * opacity) * m_data[posToIndex(canvas_x, canvas_y)].b;
             }
         }
     }
@@ -275,13 +276,10 @@ void Canvas2D::mouseDown(int x, int y) {
 
     if (settings.brushType == BRUSH_CONSTANT){
         initConstantMask(radius);
-        brush(x, y);
     }else if (settings.brushType == BRUSH_LINEAR){
         initLinearMask(radius);
-        brush(x, y);
     }else if (settings.brushType == BRUSH_QUADRATIC){
         initQuadraticMask(radius);
-        brush(x, y);
     }else if (settings.brushType == BRUSH_SMUDGE){
         initLinearMask(radius);
         initSmudgeMask(x, y, settings.brushRadius);
