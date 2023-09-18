@@ -42,7 +42,11 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/9706fa
 #### Your Output
 
 
-https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/b07aa5f2-b021-4fb1-923c-1ed5c5686300
+
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/10834b34-ec95-4c4e-82d8-d169ce4a2706
+
+
+
 
 <!---
 Paste your output on top of this comment!
