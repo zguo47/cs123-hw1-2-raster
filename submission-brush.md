@@ -42,8 +42,8 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/9706fa
 #### Your Output
 
 
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/2684ec95-be11-4f0a-9163-d4e5c895da2e
 
-https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/e5b08b2d-c321-405d-8091-a71036a79276
 
 
 <!---
@@ -62,8 +62,9 @@ https://github.com/BrownCSCI1230/projects_raster_template/assets/77859770/c5df5c
 #### Your Output
 
 
+https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/1ecc2613-d9bf-429e-b693-9d9238901e33
 
-https://github.com/BrownCSCI1230/projects-raster-zguo47/assets/98437903/49384aed-7a4c-4d96-837a-c4869200f6dd
+
 
 
 <!---
