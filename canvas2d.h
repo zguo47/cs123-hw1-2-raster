@@ -35,6 +35,11 @@ private:
     std::vector<RGBA> m_data;
     std::vector<float> mask;
     std::vector<RGBA> smudge_pickup;
+    std::vector<SOBELIMG> temp_sobel_image;
+    std::vector<SOBELIMG> sobel_result;
+    bool sobeled = false;
+    int newWidth = 500;
+    int newHeight = 500;
 
     void mouseDown(int x, int y);
     void mouseDragged(int x, int y);
@@ -68,6 +73,18 @@ private:
 
     void brush(int x, int y);
     void brushSmudge(int x, int y);
+
+    void convolve(std::vector<RGBA> &data, int width, int height, const std::vector<float> &kernel, int k_width, int k_height, bool sobel);
+    std::vector<float> filterBlur(int radius);
+    std::vector<RGBA> filterSobel(float sensitivity);
+    std::vector<RGBA> filterScaling(std::vector<RGBA> &data, int width, int height, float x, float y, bool horizontal);
+    RGBA h_prime(std::vector<RGBA> &data, int width, int height, int k, double a, int fixed, bool horizontal);
+    double g(double x, double a);
+    void filterGray();
+    std::uint8_t rgbaToGray(const RGBA &pixel);
+    int getPixelRepeated(int width, int height, int x, int y);
+    int getPixelReflected(int width, int height, int x, int y);
+    int getPixelWrapped(int width, int height, int x, int y);
 };
 
 #endif // CANVAS2D_H

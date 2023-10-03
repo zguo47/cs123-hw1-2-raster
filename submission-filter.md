@@ -29,9 +29,15 @@ We provide the functionality for saving the canvas of your running Filter progra
 |                         Load `fun_images/andy.jpeg`. Select "Scale" and set **x to 1.00 and y to 1.40**. Click "Apply Filter". Save the image to `student_outputs/andy_2.png`                         |       ![expected_outputs/andy_2.png](expected_outputs/andy_2.png)       |           ![Place andy_2.png in student_outputs folder](amongus/andy_2.png)           |
 
 ## Design Choices
+I separate out functions for scale from blur and edge detection just for the convenience of debugging.
+Blur and edge detection shares the same convolve function, using a boolean as an indicator to check whether 
+use the input image or the RGBA float image stored earlier. 
 
 ## Collaboration/References
+Huge thanks to all the TAs! 
 
 ## Known Bugs
+N/A
 
 ## Extra Credit
+N/A
